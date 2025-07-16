@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #04c6a6; */
+    background-image: url("/TETA_Logo_mobile.png");
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-position: center; */
+
+}
+
+.container, .splash-screen {
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* .container.active{
+    display: block;
+} */
+
+form header {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    background-color: #04c6a6;
+}
+
+.container form {
+    position: relative;
+    margin-top: 15px;
+    min-height: 490px;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.container form .user-details {
+    margin-top: 10px;
+}
+
+.container form .title {
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.container form .user-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+form .user-details .input-box {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    margin: 5px;
+    flex-direction: column;
+}
+
+form .gender-details .gender-title,
+.input-box .details {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-box input,
+select {
+    outline: none;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 35px;
+    padding: 5px;
+}
+
+form .gender-details .catergory {
+    display: flex;
+    width: 100%;
+    width: 500px;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.gender-details .catergory label {
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .catergory .dot {
+    height: 16px;
+    width: 16px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked~.catergory label .one,
+#dot-2:checked~.catergory label .two,
+#dot-3:checked~.catergory label .three {
+    border-color: gray;
+    background: black;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+.upload-docs{
+   margin: 10px;
+}
+button{
+    margin-top: 50px;
+    background-color: #04c6a6;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+p a{
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}
+.welcome{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.welcome span{
+    color: #04c6a6;
+}
+.link{
+    text-align: center;
+}
+
+.error-message{
+    padding: 12px;
+    background: #f8d7da;
+    border-radius: 5px;
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
